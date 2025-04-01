@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAZE Coffee | Artisan Coffee Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <!-- <div class="cursor"></div>
+    <div class="loader">
+        <div class="coffee-cup">
+            <div class="coffee"></div>
+        </div>
+        <h2>KAZE</h2>
+    </div> -->
+
+    <header id="header">
+        <div class="logo">
+            <h1>KAZE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="reveal-text">Experience the Wind of Flavor</h1>
+                <p class="reveal-text">Artisan coffee crafted with passion and precision</p>
+                <a href="#menu" class="btn reveal-text">Explore Our Menu</a>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-long-arrow-alt-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Our Story</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container" data-speed="0.5"></div>
+                    </div>
+                    <div class="about-text">
+                        <h3>The Meaning of KAZE</h3>
+                        <p>In Japanese, "KAZE" means wind - a force that brings change and freshness. Just like the wind, our coffee shop aims to bring a fresh perspective to coffee culture. Founded in 2020, we've been dedicated to sourcing the finest beans directly from sustainable farms across the globe.</p>
+                        <h3>Our Philosophy</h3>
+                        <p>We believe in creating more than just a cup of coffee - we craft experiences. Every bean is carefully selected, expertly roasted, and prepared with precision to unlock its unique character and flavor profile.</p>
+                        <a href="#services" class="text-link">Discover our approach <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="menu-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="coffee">Coffee</button>
+                    <button class="filter-btn" data-filter="specialty">Specialty</button>
+                    <button class="filter-btn" data-filter="pastry">Pastries</button>
+                </div>
+                <div class="menu-items">
+                    <!-- Coffee -->
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-image">
+                            <div class="image-overlay">
+                                <span>Bestseller</span>
+                            </div>
+                        </div>
+                        <div class="menu-details">
+                            <h3>Signature Espresso</h3>
+                            <p>Our bold, smooth house blend with notes of chocolate and caramel</p>
+                            <span class="price">$3.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-image"></div>
+                        <div class="menu-details">
+                            <h3>Pour Over</h3>
+                            <p>Hand-poured single origin coffees, showcasing unique flavor profiles</p>
+                            <span class="price">$4.75</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-image"></div>
+                        <div class="menu-details">
+                            <h3>Cold Brew</h3>
+                            <p>Steeped for 18 hours for a smooth, less acidic flavor experience</p>
+                            <span class="price">$4.25</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Specialty -->
+                    <div class="menu-item" data-category="specialty">
+                        <div class="menu-image">
+                            <div class="image-overlay">
+                                <span>New</span>
+                            </div>
+                        </div>
+                        <div class="menu-details">
+                            <h3>KAZE Signature Latte</h3>
+                            <p>Espresso infused with homemade caramel and a hint of sea salt</p>
+                            <span class="price">$5.25</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="specialty">
+                        <div class="menu-image"></div>
+                        <div class="menu-details">
+                            <h3>Matcha Ceremony</h3>
+                            <p>Premium grade matcha whisked to perfection, served hot or iced</p>
+                            <span class="price">$4.95</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Pastries -->
+                    <div class="menu-item" data-category="pastry">
+                        <div class="menu-image"></div>
+                        <div class="menu-details">
+                            <h3>Almond Croissant</h3>
+                            <p>Flaky croissant filled with rich almond cream and toasted almonds</p>
+                            <span class="price">$4.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="pastry">
+                        <div class="menu-image"></div>
+                        <div class="menu-details">
+                            <h3>Zephyr Cake</h3>
+                            <p>Light, airy cake with seasonal fruits and subtle cardamom spice</p>
+                            <span class="price">$5.75</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-cta">
+                    <p>We regularly update our menu with seasonal specials</p>
+                    <a href="#contact" class="btn">Visit Us Today</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="icon">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h3>Coffee Tastings</h3>
+                        <p>Join our expert baristas for guided tastings exploring different origins and brewing methods. Perfect for coffee enthusiasts looking to expand their palate.</p>
+                        <a href="#" class="card-link">Learn More</a>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Private Events</h3>
+                        <p>Host your next gathering in our stylish space. We offer customized menus and service for celebrations, meetings, and special occasions.</p>
+                        <a href="#" class="card-link">Learn More</a>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Brewing Workshops</h3>
+                        <p>Learn the art and science of coffee brewing with our hands-on workshops. Take home new skills to perfect your coffee experience.</p>
+                        <a href="#" class="card-link">Learn More</a>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Corporate Packages</h3>
+                        <p>Elevate your office coffee experience with our subscription packages. We deliver freshly roasted beans and can provide equipment and training.</p>
+                        <a href="#" class="card-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="quote">"KAZE has transformed my morning routine. Their commitment to quality is evident in every cup."</div>
+                        <div class="author">— Emma L.</div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="quote">"The brewing workshop changed how I make coffee at home. The baristas are knowledgeable and passionate."</div>
+                        <div class="author">— James T.</div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="quote">"Not just great coffee, but a wonderful atmosphere. It's become my favorite spot to work remotely."</div>
+                        <div class="author">— Maya K.</div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Visit KAZE</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Breeze Avenue<br>Coffee District, CA 94123</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Monday - Friday: 7am - 7pm<br>
+                                Saturday - Sunday: 8am - 8pm</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Contact</h3>
+                                <p>Phone: (555) 123-4567<br>
+                                Email: hello@kazecoffee.com</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <h3>Send us a message</h3>
+                            <div class="form-group">
+                                <input type="text" id="name" required>
+                                <label for="name">Your Name</label>
+                                <span class="focus-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Your Email</label>
+                                <span class="focus-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" required></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="focus-border"></span>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for seasonal specials, events, and coffee tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>KAZE</h2>
+                    <p>Experience the wind of flavor</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Coffee Tastings</a></li>
+                            <li><a href="#">Private Events</a></li>
+                            <li><a href="#">Brewing Workshops</a></li>
+                            <li><a href="#">Corporate Packages</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KAZE Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
