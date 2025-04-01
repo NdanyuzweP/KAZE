@@ -350,7 +350,7 @@ nav ul li a.active::after {
 
 .image-container {
     height: 500px;
-    background: url('images/background.png') center/cover no-repeat;
+    background: url('images/1.png') center/cover no-repeat;
     border-radius: 10px;
     box-shadow: var(--shadow);
     transition: transform 0.5s ease;
@@ -456,7 +456,7 @@ nav ul li a.active::after {
 
 .menu-image {
     height: 200px;
-    background: url('/api/placeholder/400/200') center/cover no-repeat;
+    background: url('images/2.png') center/cover no-repeat;
     position: relative;
 }
 
